@@ -11,6 +11,13 @@ namespace WtterDaten
         public double temperatur { get; private set; }
         public double luftfeuchtigkeit { get; private set; }
 
+        public cDataset()
+        {
+            datum = "";
+            temperatur = 0;
+            luftfeuchtigkeit = 0;
+        }
+
         public cDataset(string pDatum, double pTemperatur, double pLuftfeuchtigkeit)
         {
             datum = pDatum;
